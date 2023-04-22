@@ -1,0 +1,134 @@
+/* Resetting default margin and padding*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  /* Defining typography */
+  body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    /* Fallback for old browsers */
+  background: #001229;
+  /* Gradiente para abajo */
+    background: -webkit-linear-gradient(to bottom, #001229, #171a4a);
+
+  }
+
+  /* Defining layout */
+  header {
+    background-color: #171a4a00;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  nav ul {
+    display: flex;
+  }
+
+  nav li {
+    margin-right: 20px;
+  }
+
+  nav li a {
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+  }
+
+  nav li a:hover {
+    font-weight: bold;
+  }
+
+  main {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  section {
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 40px;
+  }
+
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 1rem;
+  }
+
+  #repos {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap; /* hace que los elementos "reboten" al final de la fila */
+    justify-content: space-between;
+    list-style: none;
+  }
+
+  #repos li {
+    width: calc(25% - 1rem);
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .card {
+    background-color: #fff;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+    text-align: center; /* centrar el contenido */
+  }
+
+  .card:hover {
+    box-shadow: #18c3e6 0 4px 6px rgba(0, 0, 0, 0.1);
+    transform: translateY(-0.5rem) scale(1.025);
+    
+
+  }
+
+  .card img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover; /* ajustar la imagen al tamaño de la card */
+  }
+
+  .card h3 {
+    margin: 0;
+    font-size: 1.25rem;
+    font-weight: 600;
+  }
+
+  .card a.button {
+    display: block;
+    padding: 0.5rem;
+    background-color: #18c3e6;
+    font-size: 1rem;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 0.5rem;
+    transition: background-color 0.2s ease;
+  }
+
+  .card a.button:hover {
+    background-color: #15a7c6;
+  }
+
+  @media (max-width: 600px) {
+    /* reducir el tamaño de fuente en pantallas pequeñas */
+    .card h3 {
+      font-size: 1rem;
+    }
+  }
